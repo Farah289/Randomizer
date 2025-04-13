@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting to Your Survey...</title>
+  <script>
+    window.onload = function() {
+      var urls = [
+        "https://forms.gle/pGc5LiwBvTAQTeqG8",  // Scenario 1
+        "https://forms.gle/4tRPk3JZNR9QACDp7",  // Scenario 2
+        "https://forms.gle/uu4FvTowmg2gAvPE8",  // Scenario 3
+        "https://forms.gle/APTdqT7QgjoTq2F79",  // Scenario 4
+        "https://forms.gle/1JqiSXUvTJ2eHDRy8",  // Scenario 5
+        "https://forms.gle/QvgoHxFUwiTRqxP68",  // Scenario 6
+        "https://forms.gle/SAhzmq1vjwGEGD82A",  // Scenario 7
+        "https://forms.gle/1q1GcZdxfnhqD9nP7",  // Scenario 8
+        "https://forms.gle/6E6DRmDCDCHqMPDV7",  // Scenario 9
+        "https://forms.gle/ibPRmuZHYrKDXCx49", // Scenario 10
+        "https://forms.gle/ineofqaLRM7haJ1D8", // Scenario 11
+        "https://forms.gle/XWngoo3ZPDCJoZWA9", // Scenario 12
+        "https://forms.gle/ER28iwCY9EydawJb7", // Scenario 13
+        "https://forms.gle/zLxgUQY5cXsyTyzGA", // Scenario 14
+        "https://forms.gle/Y7biQmeWtKPkESFo7"  // Scenario 15
+      ];
+
+      var randomIndex = Math.floor(Math.random() * urls.length);
+      window.location.href = urls[randomIndex];
+    };
+  </script>
+</head>
+<body>
+  <h3 style="text-align: center; margin-top: 20%;">Redirecting you to your scenario... Please wait.</h3>
+</body>
+</html>
