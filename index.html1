@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting to Study 2 Scenario...</title>
+  <script>
+    // Define your Study 2 scenario links here:
+    const study2Scenarios = [
+      "https://forms.gle/8mCH5mGRJdgrDi1G9",  // Study 2 - Scenario 1
+      "https://forms.gle/hJssZ7HbrtyZHoJb8",  // Study 2 - Scenario 2
+      "https://forms.gle/VWcqZF4rRxWJW65u8",  // Study 2 - Scenario 3
+      "https://forms.gle/ENCuYMe9GhHsjnTcA"   // Study 2 - Scenario 4
+    ];
+
+    // Randomly select one scenario link
+    const selectedScenario = study2Scenarios[Math.floor(Math.random() * study2Scenarios.length)];
+
+    // Redirect when the page loads
+    window.onload = function() {
+      window.location.href = selectedScenario;
+    };
+  </script>
+</head>
+<body>
+  <p style="text-align: center; margin-top: 20%; font-family: Arial, sans-serif;">
+    Redirecting you to your scenario for Study 2...<br><br>
+    If you are not redirected automatically, <a href="#" onclick="window.location.href = selectedScenario;">click here</a>.
+  </p>
+</body>
+</html>
