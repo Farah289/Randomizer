@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting to Study 3 Scenario...</title>
+  <script>
+    // Define your Study 3 scenario links here:
+    const study3Scenarios = [
+      "https://forms.gle/iTT3XMYph7MXpM6F9",  // Study 3 - Scenario 1
+      "https://forms.gle/Ggia5ANrYLyiCzjTA",  // Study 3 - Scenario 2
+      "https://forms.gle/okKAdbZwyuyKbZmp6",  // Study 3 - Scenario 3
+      "https://forms.gle/osZpZhGRRnLmB4ne9",  // Study 3 - Scenario 4
+      "https://forms.gle/odq5ynpUeBZ88QKn6",  // Study 3 - Scenario 5
+      "https://forms.gle/LJHF1ve93v6Rt1hD6",  // Study 3 - Scenario 6
+      "https://forms.gle/L7qpeUewXs5G95A57",  // Study 3 - Scenario 7
+      "https://forms.gle/24JRsDdQ916WjCva7"   // Study 3 - Scenario 8
+    ];
+
+    // Randomly select one scenario link
+    const selectedScenario = study3Scenarios[Math.floor(Math.random() * study3Scenarios.length)];
+
+    // Redirect when the page loads
+    window.onload = function() {
+      window.location.href = selectedScenario;
+    };
+  </script>
+</head>
+<body>
+  <p style="text-align: center; margin-top: 20%; font-family: Arial, sans-serif;">
+    Redirecting you to your scenario for Study 3...<br><br>
+    If you are not redirected automatically, <a href="#" onclick="window.location.href = selectedScenario;">click here</a>.
+  </p>
+</body>
+</html>
